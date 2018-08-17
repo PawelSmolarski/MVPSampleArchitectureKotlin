@@ -11,10 +11,12 @@ import javax.inject.Inject
 import kotlinx.android.synthetic.main.fragment_home.*
 import pawelsmolarski95.gmail.com.mvpsamplearchitecturekotlin.base.navigator.Navigator
 import pawelsmolarski95.gmail.com.mvpsamplearchitecturekotlin.modules.examplefragment.ExampleFragment
+import pawelsmolarski95.gmail.com.mvpsamplearchitecturekotlin.modules.examplefragment.ExampleModel
+import pawelsmolarski95.gmail.com.mvpsamplearchitecturekotlin.modules.examplefragment.injection.ExampleModule
 
 class HomeFragment : BaseFragment(), HomeContract.View {
     @Inject
-    internal lateinit var presenter: HomeContract.Presenter
+    lateinit var presenter: HomeContract.Presenter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreateView(inflater, container, savedInstanceState)

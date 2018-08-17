@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 class ExampleFragment : BaseFragment(), ExampleContract.View {
     @Inject
-    internal lateinit var presenter: ExampleContract.Presenter
+    lateinit var presenter: ExampleContract.Presenter
 
     override fun initializeInjector() {
         DaggerExampleComponent
